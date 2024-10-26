@@ -4,6 +4,7 @@
 list_of_sizes=(8 16 32)
 
 # Loop through each program name passed as an argument
+# Geeksforgeeks.org was used here
 for program in "$@"; do
     # Create the output file name by appending .out to the program name
     output_file="${program}.out"
