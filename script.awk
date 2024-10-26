@@ -10,10 +10,11 @@ BEGIN {
     mi_multi_vehicle_accidents = 0
     mi_jan_feb_accidents = 0
 }
-
+#stackoverflow.com was used here
 NR > 1 {  # Skipping header row
     total_accidents++
-
+    
+    #stackoverflow.com was used here
     # Proportion of Multiple Vehicles
     if ($3 >= 2) {
         multi_vehicle_accidents++
@@ -46,6 +47,7 @@ NR > 1 {  # Skipping header row
 
 END {
     # Output proportions
+    # My friends help was used here
     printf "Multiple Vehicles Proportion: %.6f\n", multi_vehicle_accidents / total_accidents
     printf "Jan/Feb Proportion: %.6f\n", jan_feb_accidents / total_accidents
     printf "MI Multiple Vehicles Proportion: %.6f\n", mi_multi_vehicle_accidents / mi_accidents
